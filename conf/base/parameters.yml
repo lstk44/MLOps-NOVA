@@ -1,0 +1,25 @@
+test_fraction: 0.3
+random_state: 2021
+target_column: "Fire Alarm"
+feature_selection: "rfe"
+model_name: "smoke_detection"
+with_feature_selection: True
+
+# Decision Tree parameters
+dt:
+  max_depth: 6
+  min_samples_split: 2
+
+# Random Forest parameters
+rf:
+  n_estimators: 100
+  max_depth: 6
+  max_features: 3
+
+# MLFlow run names
+run_names:
+  run_name_preprocessing1: "data cleaning"
+  run_name_preprocessing2: "feature engineering"
+  run_name_feature_selection: "feature_selection"
+  run_name_train_model: "model_training"
+  #run_name_train_model_rf: "Random Forest Model"
